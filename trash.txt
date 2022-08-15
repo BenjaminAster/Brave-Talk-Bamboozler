@@ -1,0 +1,193 @@
+,
+		"webRequest"
+
+
+		{
+			"header": "content-security-policy",
+			"operation": "set",
+			"value": "default-src * data: blob: filesystem: about: ws: wss: 'unsafe-inline' 'unsafe-eval' ; script-src * data: blob: 'unsafe-inline' 'unsafe-eval' ; connect-src * data: blob: 'unsafe-inline' ; img-src * data: blob: 'unsafe-inline'; frame-src * data: blob: ; style-src * data: blob: 'unsafe-inline'; font-src * data: blob: ; frame-ancestors * data: blob: ;"
+		}
+
+		
+		{
+			"header": "content-type",
+			"operation": "set",
+			"value": "text/html"
+		},
+
+
+
+
+
+
+		
+		"activeTab",
+		"alarms",
+		"background",
+		"bookmarks",
+		"browsingData",
+		"clipboardRead",
+		"clipboardWrite",
+		"contentSettings",
+		"contextMenus",
+		"cookies",
+		"debugger",
+		"declarativeContent",
+		"declarativeNetRequest",
+		"declarativeNetRequestWithHostAccess",
+		"declarativeNetRequestFeedback",
+		"desktopCapture",
+		"downloads",
+		"fontSettings",
+		"gcm",
+		"geolocation",
+		"history",
+		"identity",
+		"idle",
+		"management",
+		"nativeMessaging",
+		"notifications",
+		"pageCapture",
+		"power",
+		"printerProvider",
+		"privacy",
+		"processes",
+		"proxy",
+		"scripting",
+		"search",
+		"sessions",
+		"storage",
+		"system.cpu",
+		"system.display",
+		"system.memory",
+		"system.storage",
+		"tabCapture",
+		"tabGroups",
+		"tabs",
+		"topSites",
+		"tts",
+		"ttsEngine",
+		"unlimitedStorage",
+		"webNavigation"
+
+
+
+
+			// };
+			// const codeString = `(${codeFunction.toString()})()`;
+			// // script.src = "data:application/javascript;charset=utf-8," + encodeURIComponent(codeString);
+			// // script.src = "https://benjaminaster.github.io/GeoQuiz/_/main.js";
+			// // script.src = URL.createObjectURL(new Blob([codeString], { type: "application/javascript" }));
+			// script.textContent = codeString;
+			// // document.head.append(script);
+			// // document.head.insertAdjacentElement("afterbegin", script);
+			// codeFunction();
+
+			
+			// // class Brave {
+			// // 	async isBrave() {
+			// // 		return true;
+			// // 	};
+			// // };
+
+			// // window.Navigator.prototype.brave = new Brave();
+			// // window.navigator.brave = new Brave();
+
+			// // console.log(window.navigator.brave);
+
+			// const script = document.createElement("script");
+			// const codeFunction = () => {
+
+
+
+// chrome.webRequest.onBeforeRequest.addListener(
+// 	(...args) => {
+// 		console.log("onBeforeRequest", ...args);
+// 	},
+// 	{
+// 		urls: ["<all_urls>"],
+// 	},
+// 	["requestBody", "extraHeaders"],
+// );
+
+// chrome.webRequest.onBeforeSendHeaders.addListener(
+// 	(...args) => {
+// 		console.log("onBeforeSendHeaders", ...args);
+// 	},
+// 	{
+// 		urls: ["<all_urls>"],
+// 	},
+// 	["requestHeaders", "extraHeaders"],
+// );
+
+// chrome.webRequest.onActionIgnored.addListener(
+// 	(...args) => {
+// 		console.log("onActionIgnored", ...args);
+// 	},
+// );
+
+// chrome.webRequest.onCompleted.addListener(
+// 	(...args) => {
+// 		console.log("onCompleted", ...args);
+// 	},
+// 	{
+// 		urls: ["<all_urls>"],
+// 	},
+// );
+
+// let newResponseHeaders;
+
+// chrome.webRequest.onHeadersReceived.addListener(
+// 	({ responseHeaders }) => {
+// 		// const newResponseHeaders = responseHeaders.filter(({ name }) => name !== "content-security-policy");
+// 		newResponseHeaders = structuredClone(responseHeaders);
+// 		(newResponseHeaders.find(({ name }) => name === "content-security-policy") ?? {}).value = "none";
+// 		newResponseHeaders.push({
+// 			name: "foo", value: "bar",
+// 		});
+// 		console.log("onHeadersReceived", responseHeaders, newResponseHeaders);
+// 		return {
+// 			responseHeaders: newResponseHeaders,
+// 		};
+// 	},
+// 	{
+// 		urls: ["<all_urls>"],
+// 	},
+// 	["responseHeaders", "extraHeaders"],
+// );
+
+// chrome.webRequest.onResponseStarted.addListener(
+// 	(...args) => {
+// 		console.log("onResponseStarted", ...args);
+// 	},
+// 	{
+// 		urls: ["<all_urls>"],
+// 	},
+// );
+
+// chrome.webRequest.onSendHeaders.addListener(
+// 	(...args) => {
+// 		console.log("onSendHeaders", ...args);
+// 	},
+// 	{
+// 		urls: ["<all_urls>"],
+// 	},
+// );
+
+
+,
+		"declarativeNetRequest",
+		"declarativeNetRequestWithHostAccess",
+		"declarativeNetRequestFeedback"
+
+
+	
+	"declarative_net_request": {
+		"rule_resources": [
+			{
+				"id": "ruleset_1",
+				"enabled": true,
+				"path": "./rules_1.json"
+			}
+		]
+	},
