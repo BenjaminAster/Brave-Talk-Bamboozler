@@ -1,4 +1,6 @@
 
+<img src="./assets/icon.svg" alt="icon of Brave Talk Bamboozler" width="100" height="100" />
+
 # Brave Talk Bamboozler
 
 A Chrome extension that tricks [Brave Talk](https://talk.brave.com) into thinking you're using Brave, even if you're actually using Chrome.
