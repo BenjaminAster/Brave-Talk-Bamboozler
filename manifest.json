@@ -1,12 +1,18 @@
 {
 	"manifest_version": 3,
 	"name": "Brave Talk Bamboozler",
-	"version": "0.0.1",
-	"description": "Chrome extension that tricks Brave Talk into thinking you're using Brave",
+	"version": "0.1.0",
+	"description": "A Chrome extension that tricks Brave Talk into thinking you're using Brave",
+	"icons": {
+		"16": "./assets/16px.png",
+		"48": "./assets/48px.png",
+		"128": "./assets/128px.png"
+	},
 	"content_scripts": [
 		{
 			"matches": [
-				"<all_urls>"
+				"https://talk.brave.com/",
+				"https://talk.brave.com/?*"
 			],
 			"js": [
 				"./script.js"
@@ -18,65 +24,10 @@
 		"type": "module"
 	},
 	"host_permissions": [
-		"<all_urls>"
+		"https://talk.brave.com/",
+		"https://talk.brave.com/?*"
 	],
-	"declarative_net_request": {
-		"rule_resources": [
-			{
-				"id": "ruleset_1",
-				"enabled": true,
-				"path": "./rules_1.json"
-			}
-		]
-	},
 	"permissions": [
-		"activeTab",
-		"alarms",
-		"background",
-		"bookmarks",
-		"browsingData",
-		"clipboardRead",
-		"clipboardWrite",
-		"contentSettings",
-		"contextMenus",
-		"cookies",
-		"debugger",
-		"declarativeContent",
-		"declarativeNetRequest",
-		"declarativeNetRequestWithHostAccess",
-		"declarativeNetRequestFeedback",
-		"desktopCapture",
-		"downloads",
-		"fontSettings",
-		"gcm",
-		"geolocation",
-		"history",
-		"identity",
-		"idle",
-		"management",
-		"nativeMessaging",
-		"notifications",
-		"pageCapture",
-		"power",
-		"printerProvider",
-		"privacy",
-		"processes",
-		"proxy",
-		"scripting",
-		"search",
-		"sessions",
-		"storage",
-		"system.cpu",
-		"system.display",
-		"system.memory",
-		"system.storage",
-		"tabCapture",
-		"tabGroups",
-		"tabs",
-		"topSites",
-		"tts",
-		"ttsEngine",
-		"unlimitedStorage",
-		"webNavigation"
+		"scripting"
 	]
 }
